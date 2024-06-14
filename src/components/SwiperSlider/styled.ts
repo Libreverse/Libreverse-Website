@@ -3,8 +3,8 @@ import styled from "@emotion/styled";
 import "swiper/css";
 
 export const SwiperStyled = styled(Swiper)<{
-    slidesPerView: any;
+  slidesPerView: any;
 }>`
-    overflow: hidden;
-    width: 100%;
+  overflow: hidden;
+  width: 100%;
 `;

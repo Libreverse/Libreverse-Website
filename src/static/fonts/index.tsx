@@ -12,16 +12,16 @@ import RobotoThin from "./Roboto-Thin.woff2";
 import RobotoThinItalic from "./Roboto-ThinItalic.woff2";
 
 export {
-    RobotoBlack,
-    RobotoBlackItalic,
-    RobotoBold,
-    RobotoBoldItalic,
-    RobotoItalic,
-    RobotoLight,
-    RobotoLightItalic,
-    RobotoMedium,
-    RobotoMediumItalic,
-    RobotoRegular,
-    RobotoThin,
-    RobotoThinItalic,
+  RobotoBlack,
+  RobotoBlackItalic,
+  RobotoBold,
+  RobotoBoldItalic,
+  RobotoItalic,
+  RobotoLight,
+  RobotoLightItalic,
+  RobotoMedium,
+  RobotoMediumItalic,
+  RobotoRegular,
+  RobotoThin,
+  RobotoThinItalic,
 };
