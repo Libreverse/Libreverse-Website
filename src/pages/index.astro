@@ -1,0 +1,51 @@
+---
+import { zuck, collab, metaverse } from "@static/images";
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+---
+
+<Layout
+    title="LibreVerse - Home"
+    description="YOUR META DESCRIPTION FOR SEO"
+>
+    <main class="page-content">
+        <Hero
+            client:load
+            heroType="fullPageSlider"
+            data={[
+                {
+                    subtitle: "The Metaverse, but open-source",
+                    title: "LibreVerse",
+                    background: metaverse.src,
+                    paragraph: "The Metaverse space is entirely dominated by closed-source big tech companies. Libreverse is here to change that.",
+                    button: {
+                        text: "Enter the Libreverse",
+                        link: "/enter",
+                    },
+                },
+                {
+                    subtitle: "That can't continue",
+                    title: "HE is winning",
+                    background: zuck.src,
+                    paragraph:
+                        "On October 28, 2021, Mark Zuckerberg had become the laughing stock of the internet after rebranding Facebook to Meta Platforms as part of his efforts to create an online Metaverse. Three years later, it’s looking increasingly like the internet is becoming the laughing stock of Mark Zuckerberg, as the Metaverse grows ever closer to reality. ",
+                    button: {
+                        text: "Read the full manifesto",
+                        link: "/manifesto"
+                    },
+                },
+                {
+                    subtitle: "Get the code on GitHub",
+                    title: "Take action",
+                    background: collab.src,
+                    paragraph:
+                        "Libreverse is licensed under MIT License and is available on GitHub. Contributions are welcome.",
+                    button: {
+                        text: "Visit GitHub",
+                        link: "https://github.com/Libreverse"
+                    },
+                },
+            ]}
+        />
+    </main>
+</Layout>

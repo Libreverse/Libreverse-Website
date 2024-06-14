@@ -1,0 +1,112 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+import { metaverse } from "@static/images";
+import { Footer } from "@modules/Footer";
+---
+
+<style>
+    @keyframes slideUp {
+        from {
+            transform: translateY(20px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    .article-background {
+        background-color: #F3F3F3;
+        display: flex;
+        justify-content: center;
+        min-height: 75vh;
+    }
+
+    .article-content {
+        animation: fadeIn 0.7s ease-in-out, slideUp 0.5s ease-in-out;
+        padding: 25px 0 0;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .article-content p {
+        color: black;
+        margin: 20px 0;
+    }
+
+    .article-content, 
+    .article-content h2,  
+    .article-content ul, 
+    .article-content li {
+        color: black;
+    }
+
+    .article-content a {
+        color: #475c6d; /* Change the color as per your preference */
+        text-decoration: underline;
+    }
+
+    /* Media query for screens smaller than 900px */
+    @media (max-width: 1050px) {
+        .article-content {
+            padding: 20px 0 0;
+            max-width: 95%;
+        }
+
+        .article-content p {
+            margin: 18px 0;
+            font-size: 16px;
+        }
+
+        .article-content h2 {
+            font-size: 20px;
+        }
+    }
+
+    /* Media query for screens smaller than 600px */
+    @media (max-width: 550px) {
+        .article-content {
+            padding: 15px 0 0;
+            max-width: 90%;
+        }
+
+        .article-content p {
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .article-content h2 {
+            font-size: 18px;
+        }
+    }
+</style>
+    
+    <Layout
+        title="Libreverse - Our Manifesto"
+        description="The manifesto of Libreverse."
+    >
+        <main class="page-content">
+            <Hero
+                heroType="ParallaxImage"
+                client:visible
+                data={{
+                    image: metaverse.src,
+                    content: {
+                        title: "Privacy Notice",
+                        paragraph:
+                            "Privacy is a core principle of the Libreverse. Our privacy notice is really this simple.",
+                    },
+                }}
+            />
+            <article class="article-background">
+              <div class="article-content">
+                <h2>Section 1: Providers</h2>
+                    <p>
+                    This website uses Netlify as a hosting provider. Netlify may collect personal data about visitors to this website. Please refer to Netlify's privacy policy (link below) for more information.
+                    </p>
+                    <a href="https://www.netlify.com/privacy/">Netlify Privacy Policy</a>
+              </div>
+            </article>
+        </main>
+        <Footer />
+    </Layout>
