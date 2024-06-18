@@ -17,7 +17,7 @@ export const Navigation: FC = () => {
             <a href="/enter">Enter</a>
           </li>
           <li>
-            <a href="/manifesto">Manifesto</a>
+            <a href="/whitepaper">Whitepaper</a>
           </li>
           <li>
             <a href="https://github.com/Libreverse/Libreverse">
